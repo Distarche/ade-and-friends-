@@ -25,7 +25,7 @@ label start:
 
     # These display lines of dialogue.
 
-
+    k "SIUUUUUUUUUUUUUUUU"
 
     # This ends the game.
 
