@@ -26,6 +26,7 @@ label start:
     # These display lines of dialogue.
 
     k "SIUUUUUUUUUUUUUUUU"
+    a "Madre mía, el bicho"
 
     # This ends the game.
 
