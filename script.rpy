@@ -1,6 +1,6 @@
 # The script of the game goes in this file.
 
-# comentario
+# manteca de la abuela
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
