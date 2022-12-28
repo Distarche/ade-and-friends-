@@ -1,7 +1,4 @@
-# The script of the game goes in this file.
-
-# manteca de la abuela
-
+# The script of the game goes in this file
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
@@ -41,50 +38,78 @@ label start:
         "Ruta 3":
             jump ruta3
 
-    label ruta1:
+    label ruta1
 
-        $ ruta1_final = True
-
-        e "While creating a multi-path visual novel can be a bit more work, it can yield a unique experience."
+        # Ruta Romantica
 
         menu:
         
-        "Ruta 1: Final 1":
+        "Ruta 1: Final A:
         jump ruta1_final_true        
         
-        "Ruta 1: Final 2":
+        "Ruta 1: Final B:
         jump ruta1_final_false
 
             
             label ruta1_final_true
+            "Ruta 1: Final A:
 
+            jump ending
 
             label ruta1_final_false
+            "Ruta 1: Final B:
+            
+            jump ending
+        
 
+     label ruta2
 
-        # jump ending
+        # Ruta Comedia
 
-    label ruta2:
+        menu:
+        
+        "Ruta 2: Final A":
+        jump ruta2_final_true        
+        
+        "Ruta 2: Final B:
+        jump ruta2_final_false
+            
+            label ruta2_final_true
+            "Ruta 2: Final A:"
 
-        $ menu_flag = False
+             jump ending
 
-        e "Games without menus are called kinetic novels, and there are dozens of them available to play."
+            label ruta2_final_false
+            "Ruta 2: Final B:"
 
-    label ruta2:
+              jump ending
 
-        $ menu_flag = False
+          
 
-        e "Games without menus are called kinetic novels, and there are dozens of them available to play."
+    label ruta3:
 
-        jump choice1_done
+        # Ruta Comedia
 
-    label choice1_done:
+        menu:
+        
+        "Ruta 2: Final A":
+        jump ruta2_final_true        
+        
+        "Ruta 2: Final B:
+        jump ruta2_final_false
 
-        # ... the game continues here.
+            label ruta2_final_true
+            "Ruta 2: Final A:
 
+            jump ending
 
-        "Y aquí termina"
+            label ruta2_final_false
+            "Ruta 2: Final B:
 
-    # This ends the game.
+            jump ending
+   
+    label ending
+
+    "Thanks for playing!"
 
     return
