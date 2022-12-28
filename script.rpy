@@ -43,12 +43,12 @@ label start:
 
             
             label ruta1_final_true
-            "Ruta 1: Final A:
+            "Ruta 1: Final A:"
 
             jump ending
 
             label ruta1_final_false
-            "Ruta 1: Final B:
+            "Ruta 1: Final B:"
             
             jump ending
         
