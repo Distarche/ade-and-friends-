@@ -1,18 +1,9 @@
-# The script of the game goes in this file
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
 
 define t = Character("Tommy")
 define y = Character("Yumi")
 define k = Character("er bicho")
 
-# The game starts here.
-
 label start:
-
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
 
     scene lib
 
@@ -88,7 +79,7 @@ label start:
 
     label ruta3:
 
-        # Ruta Comedia
+        # Ruta Meta
 
         menu:
         
@@ -99,12 +90,12 @@ label start:
         jump ruta2_final_false
 
             label ruta2_final_true
-            "Ruta 2: Final A:
+            "Ruta 2: Final A:"
 
             jump ending
 
             label ruta2_final_false
-            "Ruta 2: Final B:
+            "Ruta 2: Final B:"
 
             jump ending
    
