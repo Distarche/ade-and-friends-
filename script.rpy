@@ -35,10 +35,10 @@ label start:
 
         menu:
         
-        "Ruta 1: Final A:
+        "Ruta 1: Final A:"
         jump ruta1_final_true        
         
-        "Ruta 1: Final B:
+        "Ruta 1: Final B:"
         jump ruta1_final_false
 
             
@@ -62,7 +62,7 @@ label start:
         "Ruta 2: Final A":
         jump ruta2_final_true        
         
-        "Ruta 2: Final B:
+        "Ruta 2: Final B:"
         jump ruta2_final_false
             
             label ruta2_final_true
@@ -86,7 +86,7 @@ label start:
         "Ruta 2: Final A":
         jump ruta2_final_true        
         
-        "Ruta 2: Final B:
+        "Ruta 2: Final B:"
         jump ruta2_final_false
 
             label ruta2_final_true
