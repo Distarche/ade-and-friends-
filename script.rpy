@@ -1,4 +1,3 @@
-
 define t = Character("Tommy")
 define y = Character("Yumi")
 define k = Character("er bicho")
@@ -9,7 +8,7 @@ label start:
 
     # Aquí vamos a tener la presentación del personaje principal.
     # El personaje está estudiando y de repente nota un temblor/terremoto.
-    # Toda la clase se refugia en un refugio de clase donde casualmente, está una chica que le gusta.
+    # Toda la clase se refugia en un refugio de clase donde casualmente, está una chica que le gusta.
     # Y tomas la decisión de qué ruta quieres seguir.
 
     "Empieza"
@@ -18,7 +17,7 @@ label start:
 
     "¿Qué ruta quieres seguir"
 
-        menu:
+    menu:
 
         "Ruta 1":
             jump ruta1
@@ -29,77 +28,73 @@ label start:
         "Ruta 3":
             jump ruta3
 
-    label ruta1
+    label ruta1:
 
-        # Ruta Romantica
+            # Ruta Romantica
 
-        menu:
-        
-        "Ruta 1: Final A:"
-        jump ruta1_final_true        
-        
-        "Ruta 1: Final B:"
-        jump ruta1_final_false
+    menu:
 
-            
-            label ruta1_final_true
+        "Ruta 1: Final A":
+            jump ruta1_final_true
+
+        "Ruta 1: Final B":
+            jump ruta1_final_false
+
+
+            label ruta1_final_true:
             "Ruta 1: Final A:"
 
             jump ending
 
-            label ruta1_final_false
+            label ruta1_final_false:
             "Ruta 1: Final B:"
-            
+
             jump ending
-        
 
-     label ruta2
 
-        # Ruta Comedia
+    label ruta2:
 
-        menu:
-        
+            # Ruta Comedia
+
+    menu:
+
         "Ruta 2: Final A":
-        jump ruta2_final_true        
-        
-        "Ruta 2: Final B:"
-        jump ruta2_final_false
-            
-            label ruta2_final_true
-            "Ruta 2: Final A:"
+            jump ruta2_final_true
 
-             jump ending
+        "Ruta 2: Final B":
+            jump ruta2_final_false
 
-            label ruta2_final_false
-            "Ruta 2: Final B:"
+            label ruta2_final_true:
+            "Ruta 2: Final A"
+            jump ending
 
-              jump ending
+            label ruta2_final_false:
+            "Ruta 2: Final B"
+            jump ending
 
-          
+
 
     label ruta3:
 
-        # Ruta Meta
+            # Ruta Meta
 
-        menu:
-        
-        "Ruta 2: Final A":
-        jump ruta2_final_true        
-        
-        "Ruta 2: Final B:"
-        jump ruta2_final_false
+    menu:
 
-            label ruta2_final_true
-            "Ruta 2: Final A:"
+            "Ruta 3: Final A":
+                jump ruta3_final_true
 
-            jump ending
+            "Ruta 3: Final B":
+                jump ruta3_final_false
 
-            label ruta2_final_false
-            "Ruta 2: Final B:"
+                label ruta3_final_true:
+                    "Ruta 3: Final A"
+                    jump ending
 
-            jump ending
-   
-    label ending
+                label ruta3_final_false:
+                    "Ruta 3: Final B"
+                    jump ending
+
+    label ending:
 
     "Thanks for playing!"
 
