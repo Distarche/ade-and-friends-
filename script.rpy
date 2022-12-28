@@ -47,7 +47,22 @@ label start:
 
         e "While creating a multi-path visual novel can be a bit more work, it can yield a unique experience."
 
-        jump choice1_done
+        menu:
+        
+        "Ruta 1: Final 1":
+        jump ruta1_final_true        
+        
+        "Ruta 1: Final 2":
+        jump ruta1_final_false
+
+            
+            label ruta1_final_true
+
+
+            label ruta1_final_false
+
+
+        # jump ending
 
     label ruta2:
 
