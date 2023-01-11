@@ -1,3 +1,4 @@
+
 define t = Character("Tommy")
 define y = Character("Yumi")
 define k = Character("er bicho")
@@ -11,11 +12,41 @@ label start:
     # Toda la clase se refugia en un refugio de clase donde casualmente, está una chica que le gusta.
     # Y tomas la decisión de qué ruta quieres seguir.
 
-    "Empieza"
+    "Tommy era un joven estudiante universitario que se encontraba en la biblioteca cuando comenzó el caos."
 
-    show pibe
+    scene bg room
 
-    "¿Qué ruta quieres seguir"
+    "Era un día normal en la ciudad de Tokio cuando de repente, una sirena de emergencia comenzó a sonar."
+
+    "Todo el mundo corría a refugiarse mientras la noticia se extendía rápidamente: Godzilla había vuelto."
+
+    show bicho
+
+    #Si es posible hacer que la imagen de Godzilla vibre ligeramente
+
+    k "GWAAAAAG"
+
+    hide bicho
+
+    "Tommy trató de calmarse y pensar en qué hacer, pero se sentía tan confuso debido a la situación tan surrealista que estaba viviendo..."
+
+    "De repente, recordó a su amiga de la infancia, Yumi la cual conocía desde hace años. Tommy siempre había sentido una atracción especial hacia ella, aunque nunca se hubiera atrevido a confesarlo."
+
+    #Y si hacemos lo de que ya le gustara de antes más ambiguo porque entonces se puede sentir desconectado de las otras dos rutas"
+
+    "Tommy decidió buscar a Yumi y juntos trataron de escapar de la ciudad. Los edificios se derrumbaban a su alrededor y el suelo temblaba con cada paso de Godzilla."
+
+    scene refugio1
+
+    "Sin embargo, Tommy y Yumi no se rindieron y finalmente encontraron un refugio seguro."
+
+    scene refugio2
+
+    "A partir de aquí el destino de Tommy y Yumi era uno que solo una fuerza superior podía saber. Así que..."
+
+    show piba
+
+    y "Entonces, ¿Qué es lo que vamos a hacer a partir de ahora?"
 
     menu:
 
@@ -30,7 +61,9 @@ label start:
 
     label ruta1:
 
-            # Ruta Romantica
+            # Ruta Romántica
+
+            t "modo sexo activado"
 
     menu:
 
@@ -42,12 +75,12 @@ label start:
 
 
             label ruta1_final_true:
-            "Ruta 1: Final A:"
+            "Ruta 1: Final A"
 
             jump ending
 
             label ruta1_final_false:
-            "Ruta 1: Final B:"
+            "Ruta 1: Final B"
 
             jump ending
 
@@ -55,6 +88,8 @@ label start:
     label ruta2:
 
             # Ruta Comedia
+
+            t "modo payaso activado"
 
     menu:
 
@@ -78,6 +113,8 @@ label start:
 
             # Ruta Meta
 
+            t "Berserk - Theme of Guts (Cut & Looped for One Hour)"
+
     menu:
 
             "Ruta 3: Final A":
@@ -96,6 +133,6 @@ label start:
 
     label ending:
 
-    "Thanks for playing!"
+    "¡Gracias por jugar!"
 
     return
