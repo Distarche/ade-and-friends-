@@ -2,6 +2,7 @@
 define t = Character("Tommy")
 define y = Character("Yumi")
 define k = Character("er bicho")
+define pt = Character("Pato Tecno")
 
 label start:
 
