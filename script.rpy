@@ -1,7 +1,7 @@
 
 define t = Character("Tommy")
 define y = Character("Yumi")
-define k = Character("er bicho")
+define k = Character("Kaiju")
 define pt = Character("Pato Tecno")
 
 label start:
@@ -10,32 +10,36 @@ label start:
 
     # Aquí vamos a tener la presentación del personaje principal.
     # El personaje está estudiando y de repente nota un temblor/terremoto.
-    # Toda la clase se refugia en un refugio de clase donde casualmente, está una chica que le gusta.
+    # Toda la clase se refugia en un refugio de clase donde casualmente, está la chica que le gusta.
     # Y tomas la decisión de qué ruta quieres seguir.
-
-    "Tommy era un joven estudiante universitario que se encontraba en la biblioteca cuando comenzó el caos."
+    
+     "Era un día como cualquier otro en la ciudad de Tokio"
+    
+    "Tommy era un joven estudiante universitario que se encontraba en la biblioteca cuando comenzó el caos"
 
     scene bg room
 
-    "Era un día normal en la ciudad de Tokio cuando de repente, una sirena de emergencia comenzó a sonar."
+    "De repente, una sirena de emergencia comenzó a sonar"
 
-    "Todo el mundo corría a refugiarse mientras la noticia se extendía rápidamente: Godzilla había vuelto."
+    "Todo el mundo corría a refugiarse mientras la noticia se extendía rápidamente: Godzilla había vuelto"
 
-    show bicho
+    # No mostrar al principio para sorpresa en las rutas, usarlo (show kaiju)
 
-    #Si es posible hacer que la imagen de Godzilla vibre ligeramente
+    # Si es posible hacer que la imagen de Godzilla vibre ligeramente
 
     k "GWAAAAAG"
 
-    hide bicho
+    hide kaiju
 
-    "Tommy trató de calmarse y pensar en qué hacer, pero se sentía tan confuso debido a la situación tan surrealista que estaba viviendo..."
+    "Tommy trató de calmarse y pensar en qué hacer, se sentía tan confuso con lo que estaba pasando..."
 
-    "De repente, recordó a su amiga de la infancia, Yumi la cual conocía desde hace años. Tommy siempre había sentido una atracción especial hacia ella, aunque nunca se hubiera atrevido a confesarlo."
+    "De repente, recordó Yumi, su amiga de la infancia"
+    
+    "Se conocían desde hace años. Tommy siempre había sentido una atracción especial hacia ella, aunque nunca se hubiera atrevido a confesarlo."
 
-    #Y si hacemos lo de que ya le gustara de antes más ambiguo porque entonces se puede sentir desconectado de las otras dos rutas"
+    # Y si hacemos lo de que ya le gustara de antes más ambiguo porque entonces se puede sentir desconectado de las otras dos rutas
 
-    "Tommy decidió buscar a Yumi y juntos trataron de escapar de la ciudad. Los edificios se derrumbaban a su alrededor y el suelo temblaba con cada paso de Godzilla."
+    "Tommy decidió buscar a Yumi y juntos trataron de escapar. Los edificios se derrumbaban a su alrededor y el suelo temblaba con cada paso de Godzilla."
 
     scene refugio1
 
@@ -43,15 +47,17 @@ label start:
 
     scene refugio2
 
-    "A partir de aquí el destino de Tommy y Yumi era uno que solo una fuerza superior podía saber. Así que..."
+    "A partir de aquí, el destino de Tommy y Yumi era uno que solo una fuerza superior podía saber"
 
-    show piba
+    show Yumi
+    
+    "Así que..."
 
-    y "Entonces, ¿Qué es lo que vamos a hacer a partir de ahora?"
+    y "Entonces, ¿qué es lo que vamos a hacer a partir de ahora?"
 
     menu:
 
-        "Ruta 1":
+        "Me quedaré contigo":
             jump ruta1
 
         "Ruta 2":
@@ -63,6 +69,9 @@ label start:
     label ruta1:
 
             # Ruta Romántica
+            
+            
+            
 
             t "modo sexo activado"
 
