@@ -472,7 +472,9 @@ label start:
 
             "Agarrándome la mano mientras lloraba."
 
-            "Lo último que escuche antes de que el techo se desmoronase fue un susurro."
+            "Lo último que escuché antes de que el techo se desmoronase fue un susurro."
+            
+            y "Idiota"
 
             stop music
 
