@@ -3,7 +3,7 @@ define t = Character("Tommy")
 label start:
 
 
-    # Aquí vamos a tener la presentación del personaje principal.
+    # Aquí vamos a tener la presentación del personaje principal:
     # El personaje está en un camerino y recibe la carta de un fan.
     # Se debate si seguir cantando, el grupo y el/la manager le llaman desde la puerta
     # Y tomas la decisión de qué ruta quieres seguir.
