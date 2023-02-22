@@ -1,15 +1,11 @@
 define t = Character("Tommy")
-define y = Character("Yumi")
-define k = Character("Kaiju")
-define pt = Character("Pato Tecno")
-define pm = Character("Pepsiman")
 
 label start:
 
 
     # Aquí vamos a tener la presentación del personaje principal.
-    # El personaje está estudiando y de repente nota un temblor/terremoto.
-    # Toda la clase se refugia en un refugio de clase donde casualmente, está la chica que le gusta.
+    # El personaje está en un camerino y recibe la carta de un fan.
+    # Se debate si seguir cantando, el grupo y el/la manager le llaman desde la puerta
     # Y tomas la decisión de qué ruta quieres seguir.
 
     scene fondo
@@ -18,14 +14,12 @@ label start:
 
     menu:
 
-        "Opción 1":
+        "Actriz":
             jump ruta1
 
-        "Opción 2":
+        "Idol":
             jump ruta2
 
-        "Opción 3":
-            jump ruta3
 
     label ruta1:
 
@@ -35,82 +29,38 @@ label start:
 
     menu:
 
-        "Final A":
-            jump ruta1_final_true
+        "Romántica":
 
-        "Final B":
-            jump ruta1_final_false
+                jump 1_1
 
+        "Comedia":
 
-            label ruta1_final_true:
+                jump 1_2
 
-            "Texto Final A"
+        "Meta":
 
-            jump ending
+                jump 1_3
 
-            label ruta1_final_false:
+        label 1_1
 
-            "Texto Final B"
-
-            jump ending
-
-
-    label ruta2:
-
-            # Ruta 2
-
-            "Texto Ruta 2"
-
-
-    menu:
-
-        "Final A":
-            jump ruta2_final_true
-
-        "Final B":
-            jump ruta2_final_false
-
-            label ruta2_final_true:
-
-            "Texto Final A"
-
-
-            jump ending
-
-            label ruta2_final_false:
-
-            "Texto Final B"
+        "Esto debería ser la ruta romántica"
 
             jump ending
 
 
+        label 1_2
 
-    label ruta3:
+        "The funny"
 
-            # Ruta 3
-
-            "Texto Ruta 3"
-
-
-    menu:
-
-            "Final A":
-                jump ruta3_final_true
-
-            "Final B":
-                jump ruta3_final_false
-
-                label ruta3_final_true:
-                    "Texto Final A"
-
-                    jump ending
-
-                label ruta3_final_false:
-
-                    "Texto Final B"
+            jump ending
 
 
-                    jump ending
+        label 1_3
+
+        "man"
+
+            jump ending
+
 
     label ending:
 
