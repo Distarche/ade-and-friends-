@@ -1,4 +1,4 @@
-# soge-and-firendos-
+# ade-and-friends-
 
 INSTRUCCIONES PARA LOS INVERSORES
 
