@@ -16,7 +16,7 @@ define d = Character("Dragón con un severo caso de déficit de atención")
 define z = Character("Director")
 define ph = Character("Pato Héroe")
 define b = Character("Er público")
-
+ 
 
 label start:
 
