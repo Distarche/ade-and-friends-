@@ -1,0 +1,93 @@
+define c = Character("[name]")
+
+label start:
+
+ #Mostrar escenario, transición y musiqueta. Si pones sound solo se reproduce una vez. 
+
+    scene bg camerino
+
+    with Dissolve(.5)
+
+    play music alegre
+
+    play sound kachau
+
+    "Frase 1"
+
+    #Input nombre (aunque se puede usar para otras cosas como responder preguntas. Para que se represente hay que escribir "[name]"
+
+    python:
+        name = renpy.input(_("Se escuchaba el nombre de..."))
+
+        name = name.strip() or __("Ai")
+
+    c "[name]"
+
+    "Frase 2"
+
+    with hpunch
+
+    m "Frase 3"
+
+    with vpunch
+
+    #hpunch y vpunch sirven para hacer que la pantalla vibre. h = horizontal v = vertical
+
+    menu:
+        "He nacido para esto":
+            jump rama1
+        "Esto no es lo mío":
+            jump rama2
+  # los labels a la izquierda, con : al final y su contenido indentado          
+  label rama1:
+#Para mostrar una imagen en una posición concreta y con una transición.
+    show carta1 at left:
+        zoom 0.35
+        yalign 0.5
+
+
+    with Dissolve(.5)
+
+    "blabla"
+
+    menu:
+
+        "Qué carta más cuqui...":
+
+            jump rama1_ruta1
+
+        "Qué carta más simpática...":
+
+            jump rama1_ruta2
+
+        "Qué carta más tétrica...":
+
+            jump rama1_ruta3
+---------------------------------------
+    #alpha es para definir como de transparente quieres que sea una imagen.
+    
+    show yumii at center:
+
+                    alpha 0.80
+
+                with Dissolve(.5)
+
+    #with move es para que la imagen se mueva a la hora de hacer la transición.
+
+    show ade at right:
+                    xalign 0.75
+                    yalign 1.0
+
+                with move
+
+---------------------------------------
+#vspace sirve para que la frase ra esté encima de p1.
+c "ra
+   {vspace=1}
+   p1"
+
+#what_size permite cambiar el tamaño de una palabra o frase
+
+c "Chiquito" (what_size=12)
+
+
