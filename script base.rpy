@@ -1,8 +1,5 @@
 define t = Character("Tommy")
-define y = Character("Yumi")
-define k = Character("Kaiju")
-define pt = Character("Pato Tecno")
-define pm = Character("Pepsiman")
+define c = Character("[name]")
 
 label start:
 
@@ -14,7 +11,33 @@ label start:
 
     scene fondo
 
+    with Dissolve(.5)
+
+
+    play music alegre
+
+    play sound kachau
+
     "Intro"
+
+    #Input nombre (aunque se puede usar para otras cosas como responder preguntas. Para que se represente hay que escribir "[name]"
+
+    python:
+        name = renpy.input(_("Se escuchaba el nombre de..."))
+
+        name = name.strip() or __("Ai")
+
+    "Otra frase"
+
+    with hpunch
+    with vpunch
+
+    show objeto at left:
+        zoom 0.35
+        yalign 0.5
+
+
+    with Dissolve(.5)
 
     menu:
 
@@ -113,6 +136,33 @@ label start:
                     jump ending
 
     label ending:
+
+---------------------------------------
+    #alpha es para definir como de transparente quieres que sea una imagen.
+
+    show yumii at center:
+
+                    alpha 0.80
+
+                with Dissolve(.5)
+
+    #with move es para que la imagen se mueva a la hora de hacer la transición.
+
+    show ade at right:
+                    xalign 0.75
+                    yalign 1.0
+
+                with move
+
+---------------------------------------
+#vspace sirve para que la frase ra esté encima de p1.
+c "ra
+   {vspace=1}
+   p1"
+
+#what_size permite cambiar el tamaño de una palabra o frase
+
+c "Chiquito" (what_size=12)
 
     scene bl
 
